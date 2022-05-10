@@ -29,14 +29,23 @@ img {
 
 /*Estilo del main - Index*/
 
-.carousel-inner {
-  padding: 100px 20%;
-  background-color: #FEFBF3;
+.contenedor {
+  background-color: #FFEEEE;
 }
 
 .imagenCarrusel {
   width: 100%;
-  height: 700px;
+}
+
+.card {
+  height: 500px;
+  width: 500px;
+}
+
+.cheescake {
+  width: 400px;
+  padding-left: 20px;
+  padding-top: 20px;
   
 }
 
@@ -135,8 +144,6 @@ img {
 /*Estilos de los iconos de redes sociales*/
 .iconosRedes {
   display: flex;
-  position: relative;
-  
 }
 
 .iconosRedes a img {
@@ -174,7 +181,8 @@ img {
 
 /*Esilo main seccion "Como Comprar"*/
 .mainComoComprar {
-  margin: 30px;
+  background-color: #FFEEEE;
+  margin: 0px;
   padding: 30px;
 }
 
@@ -189,7 +197,7 @@ img {
 /*Esilo main seccion "Nosotros"*/
 .mainNosotros {
   padding: 30px;
-  background-color: #FFF5EA;
+  background-color: #FFEEEE;
 }
 
 .seccionNosotros {
@@ -205,27 +213,13 @@ img {
 }
 
 /*Estilo main seccion "Productos*/
-.categorias {
-  padding-left: 50px;
-  padding-top: 60px;
+
+.contenedorProductos {
+  background-color: #FFEEEE;
 }
 
-.filtros h1 {
-  padding-bottom: 30px;
-}
-
-.filtros p {
-  padding-bottom: 15px;
-}
-
-.filtros ul li {
-  list-style: none;
-  padding-bottom: 10px;
-}
-
-/*Estilo main seccion "Productos*/
 .productos {
-  padding: 30px;
+  padding: 50px;
   display: grid;
   grid-template-columns: 30fr 30fr;
   grid-template-rows: 30fr 30fr;
@@ -233,16 +227,16 @@ img {
   grid-row-gap: 20px;
 }
 
-.productos div img {
-  object-fit: cover;
-  max-width: 60%;
-  max-height: 60%;
+.tituloProductos {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
 }
 
 /*Estilo main seccion "Contacto"*/
 /*Datos de contacto*/
 .mainContacto {
-  background-color: #FFF5EA;
+  background-color: #FFEEEE;
 }
 
 .datosContacto {
@@ -357,7 +351,7 @@ img {
 /* Mobile */
 @media screen and (max-width: 600px) {
 .carrusel {
-  grid-template-columns: repeat(1,1fr)
+  grid-template-columns: repeat(1,1fr);
 }
 .contenedorDestacados {
   grid-template-columns: repeat(1,1fr);
@@ -377,6 +371,21 @@ img {
 
 .nav {
   width: 90%;
+}
+.productos{
+  grid-template-columns: repeat(1,1fr);
+}
+.recordatorioWpp img {
+  width: 70px;
+  height: 70px;
+}
+.recordatorioEnvio img {
+  width: 70px;
+  height: 70px;
+}
+.iconoPastel img {
+  width: 70px;
+  height: 70px;
 }
 }
 /* Mobile XS */
@@ -400,8 +409,18 @@ img {
   .contenedorDestacados {
     grid-template-columns: repeat(1,1fr);
   }
-  .nav {
-    
+  .recordatorioWpp img {
+    width: 60px;
+    height: 60px;
   }
+  .recordatorioEnvio img {
+    width: 60px;
+    height: 60px;
+  }
+  .iconoPastel img {
+    width: 60px;
+    height: 60px;
+  }
+  
 
 }
