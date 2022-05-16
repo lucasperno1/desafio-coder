@@ -1,0 +1,312 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Estilos del header, nav y logo*/
+.header {
+  background-image: linear-gradient(to right, #f4bbbb, white);
+}
+.header .botonNav:hover {
+  transform: scale(0.8);
+}
+.header img {
+  max-width: 100px;
+}
+
+/*Estilos del main*/
+.contenedor {
+  background-color: #FFEEEE;
+}
+
+/*Estilos de "Productos destacados"*/
+.tituloProductosDest {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin-top: 200px;
+}
+
+.contenedorDestacados {
+  display: grid;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2, 1fr;
+  margin: 100px 5%;
+  gap: 15px;
+  /*Media query*/
+}
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  .contenedorDestacados {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.contenedorDestacados img {
+  width: 90%;
+  height: 90%;
+}
+.contenedorDestacados .imagenDestacada:hover {
+  transform: scale(1.1);
+}
+
+/*Estilos "Recordatorios"*/
+.contenedorRecordatorios {
+  display: grid;
+  grid-template-rows: 300px;
+  grid-template-columns: 300px 300px 300px;
+  gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 20px;
+  /*Media query*/
+}
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  .contenedorRecordatorios {
+    font-size: 15px;
+  }
+}
+.contenedorRecordatorios .recordatorioWpp img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  /*Media query*/
+}
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  .contenedorRecordatorios .recordatorioWpp img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contenedorRecordatorios .recordatorioWpp img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.contenedorRecordatorios .iconoPastel img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  /*Media query*/
+}
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  .contenedorRecordatorios .iconoPastel img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contenedorRecordatorios .iconoPastel img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.contenedorRecordatorios .recordatorioEnvio img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  /*Media query*/
+}
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  .contenedorRecordatorios .recordatorioEnvio img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contenedorRecordatorios .recordatorioEnvio img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/*Estilo y tamaño del footer*/
+.footer {
+  padding: 20px;
+  background-color: #f4bbbb;
+  min-height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.column-footer {
+  width: 25%;
+}
+
+.contenedorContacto {
+  padding: 20px;
+  line-height: 30px;
+}
+
+.contenedorContacto a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Estilos de los iconos de redes sociales*/
+.iconosRedes {
+  display: flex;
+}
+.iconosRedes a img {
+  max-width: 30px;
+  max-height: 30px;
+  margin: 20px;
+}
+
+/*Estilos de la navegacion del footer*/
+.navegacionFooter {
+  display: flex;
+  justify-content: center;
+}
+.navegacionFooter .menuFooter {
+  list-style: none;
+  /*Media query*/
+}
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  .navegacionFooter .menuFooter {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navegacionFooter .menuFooter {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .navegacionFooter .menuFooter {
+    display: none;
+  }
+}
+.navegacionFooter .menuFooter li {
+  margin: 30px;
+}
+.navegacionFooter .menuFooter li a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+}
+
+/*Estilo de la ubicacion maps*/
+.ubicacionMaps {
+  display: flex;
+  justify-content: end;
+  /*Media query*/
+}
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  .ubicacionMaps {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ubicacionMaps {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .ubicacionMaps {
+    display: none;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .ubicacionMaps {
+    display: none;
+  }
+}
+
+/*Estilo main seccion "Productos*/
+.contenedorProductos {
+  background-color: #FFEEEE;
+}
+.contenedorProductos .tituloProductos {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+.contenedorProductos .productos {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 30fr 30fr;
+  grid-template-rows: 30fr 30fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  /*Media query*/
+}
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  .contenedorProductos .productos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.contenedorProductos .productos .imagenProductos {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*Esilo main seccion "Nosotros"*/
+.mainNosotros {
+  padding: 30px;
+  background-color: #FFEEEE;
+}
+.mainNosotros .seccionNosotros {
+  padding-bottom: 150px;
+}
+.mainNosotros .seccionNosotros .nosotrosInfo {
+  margin: 30px;
+}
+.mainNosotros .seccionNosotros .nosotrosInfo h1 {
+  margin-bottom: 30px;
+}
+
+/*Esilo main seccion "Como Comprar"*/
+.mainComoComprar {
+  background-color: #FFEEEE;
+  margin: 0px;
+  padding: 30px;
+}
+.mainComoComprar h2 {
+  margin: 40px;
+}
+.mainComoComprar h1 {
+  margin: 40px;
+}
+
+/*Estilo main seccion "Contacto"*/
+/*Datos de contacto*/
+.mainContacto {
+  background-color: #FFEEEE;
+}
+.mainContacto .card {
+  background-color: #FFEEEE;
+  padding: 20px;
+  border: none;
+}
+.mainContacto .linkRedes {
+  padding: 40px;
+  display: flex;
+}
+.mainContacto .linkRedes .linkWpp {
+  max-width: 50px;
+  max-height: 50px;
+  margin-right: 20px;
+}
+.mainContacto .linkRedes .linkInstagram {
+  max-width: 50px;
+  max-height: 50px;
+}
+.mainContacto .linkRedes .linkFacebook {
+  max-width: 50px;
+  max-height: 50px;
+  margin-left: 20px;
+}
+.mainContacto .ingresoDatosUsuario {
+  margin: 40px;
+}
+
+/*# sourceMappingURL=styles.css.map */

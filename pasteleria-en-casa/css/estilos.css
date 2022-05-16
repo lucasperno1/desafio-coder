@@ -1,53 +1,5 @@
 
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
 
-img {
-  max-width: 100%;
-}
-
-
-/*Tamaño del logo*/
-.logoNav {
-  width: 80px;
-  height: 80px;
-}
-
-
-/*Estilos del nav*/
-.background-nav {
-  background-image: linear-gradient(to right, #f4bbbb , white);
-}
-
-.botonNav:hover {
-  transform: scale(0.8);
-}
-
-
-/*Estilo del main - Index*/
-
-.contenedor {
-  background-color: #FFEEEE;
-}
-
-.imagenCarrusel {
-  width: 100%;
-}
-
-.card {
-  height: 500px;
-  width: 500px;
-}
-
-.cheescake {
-  width: 400px;
-  padding-left: 20px;
-  padding-top: 20px;
-  
-}
 
 
 
@@ -78,8 +30,6 @@ img {
   transform: scale(1.1);
 
 }
-
-
 
 /*Recordatorios*/
 
