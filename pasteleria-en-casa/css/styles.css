@@ -19,6 +19,7 @@
 /*Estilos del main*/
 .contenedor {
   background-color: #FFEEEE;
+  padding: 30px;
 }
 
 /*Estilos de "Productos destacados"*/
@@ -224,6 +225,7 @@
 /*Estilo main seccion "Productos*/
 .contenedorProductos {
   background-color: #FFEEEE;
+  padding: 30px;
 }
 .contenedorProductos .tituloProductos {
   display: flex;
@@ -281,6 +283,7 @@
 /*Datos de contacto*/
 .mainContacto {
   background-color: #FFEEEE;
+  padding: 30px;
 }
 .mainContacto .card {
   background-color: #FFEEEE;
