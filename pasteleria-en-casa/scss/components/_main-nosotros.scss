@@ -1,0 +1,20 @@
+/*Esilo main seccion "Nosotros"*/
+
+@import '../base/variables';
+.mainNosotros {
+  padding: $padding-main-gral;
+  background-color: $bc-main;
+  .seccionNosotros {
+    padding-bottom: 150px;
+    .nosotrosInfo {
+      margin: 30px;
+      h1 {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.nosotrosInfo {
+  font-family: 'Roboto Slab', serif;
+}

@@ -1,0 +1,18 @@
+/*Esilo main seccion "Como Comprar"*/
+
+@import '../base/variables';
+.mainComoComprar {
+  background-color: $bc-main;
+  margin: 0px;
+  padding: $padding-main-gral;
+  h2 {
+    margin: 40px;
+  }
+  h1 {
+    margin: 40px;
+  }
+}
+
+.comoComprar {
+  font-family: 'Roboto Slab', serif;
+}

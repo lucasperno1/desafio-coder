@@ -1,0 +1,10 @@
+/*Mixins*/
+@mixin flex ($display, $justify, $align) {
+  display: $display;
+  justify-content: $justify;
+  text-align: $align;
+}
+
+.contenedorRecordatorios {
+  @include flex (flex, space-around, center)
+}

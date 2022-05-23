@@ -1,0 +1,87 @@
+/*Estilos del footer*/
+@import '../base/mapas';
+.footer {
+  padding: 20px;
+  background-color: $bc-footer;
+  min-height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+  .column-footer {
+    width: 25%;
+  }
+
+  .contenedorContacto {
+    padding: 20px;
+    line-height: 30px;
+  }
+
+  .contenedorContacto {
+    a{
+    text-decoration: none;
+    color: black;
+  }
+}
+
+/*Estilos de la navegacion del footer*/
+.navegacionFooter {
+  display: flex;
+  justify-content: center;
+  .menuFooter {
+    list-style: none;
+    /*Media query*/
+    @media screen and (min-width:350px) and (max-width: 450px) {
+      display: none;
+    }
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+    li {
+      margin: 30px;
+      a {
+        text-decoration: none;
+        color: black;
+        display: flex;
+      }
+    }
+  }
+}
+
+/*Estilos de los iconos de redes sociales*/
+.iconosRedes {
+  display: flex;
+  a{
+    img {
+      max-width: 30px;
+      max-height: 30px;
+      margin: 20px;
+    }
+  }
+}
+
+/*Estilo de la ubicacion maps*/
+.ubicacionMaps {
+  display: flex;
+  justify-content: end;
+  /*Media query*/
+  @media screen and (min-width:350px) and (max-width: 450px) {
+    display: none;
+  }
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+  @media screen and (max-width: 1100px) {
+    display: none;
+  }
+
+}

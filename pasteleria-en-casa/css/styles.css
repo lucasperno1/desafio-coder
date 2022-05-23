@@ -1,11 +1,5 @@
-@charset "UTF-8";
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
-
 /*Estilos del header, nav y logo*/
+/*Variables*/
 .header {
   background-image: linear-gradient(to right, #f4bbbb, white);
 }
@@ -16,117 +10,19 @@
   max-width: 100px;
 }
 
-/*Estilos del main*/
-.contenedor {
-  background-color: #FFEEEE;
-  padding: 30px;
-}
-
-/*Estilos de "Productos destacados"*/
-.tituloProductosDest {
+/*Estilos del footer*/
+/*Mapas*/
+.footer {
+  padding: 20px;
+  background-color: #f4bbbb;
+  min-height: 200px;
   display: flex;
-  justify-content: center;
-  padding: 5px;
-  margin-top: 200px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
 
-.contenedorDestacados {
-  display: grid;
-  grid-row-gap: 10px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 2, 1fr;
-  margin: 100px 5%;
-  gap: 15px;
-  /*Media query*/
-}
-@media screen and (min-width: 350px) and (max-width: 450px) {
-  .contenedorDestacados {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-.contenedorDestacados img {
-  width: 90%;
-  height: 90%;
-}
-.contenedorDestacados .imagenDestacada:hover {
-  transform: scale(1.1);
-}
-
-/*Estilos "Recordatorios"*/
-.contenedorRecordatorios {
-  display: grid;
-  grid-template-rows: 300px;
-  grid-template-columns: 300px 300px 300px;
-  gap: 20px;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 200px;
-  margin-bottom: 100px;
-  text-align: center;
-  font-size: 20px;
-  /*Media query*/
-}
-@media screen and (min-width: 350px) and (max-width: 450px) {
-  .contenedorRecordatorios {
-    font-size: 15px;
-  }
-}
-.contenedorRecordatorios .recordatorioWpp img {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 10px;
-  /*Media query*/
-}
-@media screen and (min-width: 350px) and (max-width: 450px) {
-  .contenedorRecordatorios .recordatorioWpp img {
-    width: 50px;
-    height: 50px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .contenedorRecordatorios .recordatorioWpp img {
-    width: 60px;
-    height: 60px;
-  }
-}
-.contenedorRecordatorios .iconoPastel img {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 10px;
-  /*Media query*/
-}
-@media screen and (min-width: 350px) and (max-width: 450px) {
-  .contenedorRecordatorios .iconoPastel img {
-    width: 50px;
-    height: 50px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .contenedorRecordatorios .iconoPastel img {
-    width: 60px;
-    height: 60px;
-  }
-}
-.contenedorRecordatorios .recordatorioEnvio img {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 10px;
-  /*Media query*/
-}
-@media screen and (min-width: 350px) and (max-width: 450px) {
-  .contenedorRecordatorios .recordatorioEnvio img {
-    width: 50px;
-    height: 50px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .contenedorRecordatorios .recordatorioEnvio img {
-    width: 60px;
-    height: 60px;
-  }
-}
-
-/*Estilo y tamaño del footer*/
 .footer {
   padding: 20px;
   background-color: #f4bbbb;
@@ -150,16 +46,6 @@
 .contenedorContacto a {
   text-decoration: none;
   color: black;
-}
-
-/*Estilos de los iconos de redes sociales*/
-.iconosRedes {
-  display: flex;
-}
-.iconosRedes a img {
-  max-width: 30px;
-  max-height: 30px;
-  margin: 20px;
 }
 
 /*Estilos de la navegacion del footer*/
@@ -195,6 +81,16 @@
   display: flex;
 }
 
+/*Estilos de los iconos de redes sociales*/
+.iconosRedes {
+  display: flex;
+}
+.iconosRedes a img {
+  max-width: 30px;
+  max-height: 30px;
+  margin: 20px;
+}
+
 /*Estilo de la ubicacion maps*/
 .ubicacionMaps {
   display: flex;
@@ -222,7 +118,148 @@
   }
 }
 
+/*Estilos del main*/
+/*Variables*/
+.contenedor {
+  background-color: #FFEEEE;
+  padding: 30px;
+}
+
+/*Carrusel*/
+.tituloCarrusel {
+  position: absolute;
+  top: 0;
+  color: #f4bbbb;
+  background-color: rgba(0, 0, 0, 0.656);
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+}
+
+/*Estilos de "Productos destacados"*/
+.tituloProductosDest {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin-top: 200px;
+  font-family: "Roboto Slab", serif;
+}
+
+.contenedorDestacados {
+  display: grid;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2, 1fr;
+  margin: 100px 5%;
+  gap: 15px;
+  /*Media query*/
+}
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  .contenedorDestacados {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.contenedorDestacados img {
+  width: 90%;
+  height: 90%;
+}
+.contenedorDestacados .imagenDestacada:hover {
+  transform: scale(1.1);
+}
+
+/*Estilos "Recordatorios"*/
+/*Variables*/
+.contenedorRecordatorios {
+  display: grid;
+  grid-template-rows: 300px;
+  grid-template-columns: 300px 300px 300px;
+  gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 20px;
+  /*Media query*/
+}
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  .contenedorRecordatorios {
+    font-size: 15px;
+  }
+}
+.contenedorRecordatorios .recordatorioWpp {
+  font-family: "Roboto Slab", serif;
+}
+.contenedorRecordatorios .recordatorioWpp img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  /*Media query*/
+}
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  .contenedorRecordatorios .recordatorioWpp img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contenedorRecordatorios .recordatorioWpp img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.contenedorRecordatorios .iconoPastel {
+  font-family: "Roboto Slab", serif;
+}
+.contenedorRecordatorios .iconoPastel img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  /*Media query*/
+}
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  .contenedorRecordatorios .iconoPastel img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contenedorRecordatorios .iconoPastel img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.contenedorRecordatorios .recordatorioEnvio {
+  font-family: "Roboto Slab", serif;
+}
+.contenedorRecordatorios .recordatorioEnvio img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  /*Media query*/
+}
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  .contenedorRecordatorios .recordatorioEnvio img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contenedorRecordatorios .recordatorioEnvio img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/*Estilos generales*/
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
 /*Estilo main seccion "Productos*/
+/*Variables*/
 .contenedorProductos {
   background-color: #FFEEEE;
   padding: 30px;
@@ -231,6 +268,7 @@
   display: flex;
   justify-content: center;
   padding: 40px;
+  font-family: "Roboto Slab", serif;
 }
 .contenedorProductos .productos {
   padding: 50px;
@@ -240,6 +278,13 @@
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   /*Media query*/
+}
+.contenedorProductos .productos .tituloImagen {
+  color: #f4bbbb;
+  background-color: rgba(0, 0, 0, 0.66);
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
 }
 @media screen and (min-width: 350px) and (max-width: 450px) {
   .contenedorProductos .productos {
@@ -252,6 +297,7 @@
 }
 
 /*Esilo main seccion "Nosotros"*/
+/*Variables*/
 .mainNosotros {
   padding: 30px;
   background-color: #FFEEEE;
@@ -266,7 +312,12 @@
   margin-bottom: 30px;
 }
 
+.nosotrosInfo {
+  font-family: "Roboto Slab", serif;
+}
+
 /*Esilo main seccion "Como Comprar"*/
+/*Variables*/
 .mainComoComprar {
   background-color: #FFEEEE;
   margin: 0px;
@@ -279,8 +330,13 @@
   margin: 40px;
 }
 
+.comoComprar {
+  font-family: "Roboto Slab", serif;
+}
+
 /*Estilo main seccion "Contacto"*/
 /*Datos de contacto*/
+/*Variables*/
 .mainContacto {
   background-color: #FFEEEE;
   padding: 30px;
@@ -310,6 +366,44 @@
 }
 .mainContacto .ingresoDatosUsuario {
   margin: 40px;
+}
+
+/*Mapas*/
+.footer {
+  padding: 20px;
+  background-color: #f4bbbb;
+  min-height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+/*Variables*/
+/*Mapas*/
+.footer {
+  padding: 20px;
+  background-color: #f4bbbb;
+  min-height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+/*Extends*/
+.tituloProductos, .tituloProductosDest, .navegacionFooter {
+  display: flex;
+  justify-content: center;
+}
+
+/*Mixins*/
+.contenedorRecordatorios {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

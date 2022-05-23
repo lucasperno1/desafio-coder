@@ -1,0 +1,17 @@
+/*Extends*/
+%flex {
+  display: flex;
+  justify-content: center;
+}
+
+.navegacionFooter {
+   @extend %flex;
+}
+
+.tituloProductosDest {
+   @extend %flex;
+}
+
+.tituloProductos {
+  @extend %flex;
+}

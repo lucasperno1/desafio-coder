@@ -1,0 +1,22 @@
+/*Mapas*/
+$footer:(
+  padding-footer: 20px,
+  bc-color: #f4bbbb,
+  min-height: 200px,
+  display: flex,
+  flex-wrap: wrap,
+  justify-content: space-between,
+  align-items: center,
+  align-content: center,
+);
+
+.footer{
+  padding: map-get($footer, padding-footer);
+  background-color: map-get($footer, bc-color );
+  min-height: map-get($footer, min-height );
+  display: map-get($footer , display );
+  flex-wrap: map-get($footer, flex-wrap );
+  justify-content: map-get($footer, justify-content );
+  align-items: map-get($footer, align-items );
+  align-content: map-get($footer, align-content );
+}

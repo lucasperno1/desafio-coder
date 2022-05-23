@@ -1,0 +1,15 @@
+/*Estilos del header, nav y logo*/
+@import '../base/variables';
+.header {
+    background-image: $bc-color-header;
+
+  .botonNav:hover {
+    transform: scale(0.8);
+
+  }
+
+  img {
+    max-width: 100px;
+
+  }
+}
