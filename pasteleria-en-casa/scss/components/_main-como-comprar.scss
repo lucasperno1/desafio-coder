@@ -4,12 +4,12 @@
 .mainComoComprar {
   background-color: $bc-main;
   margin: 0px;
-  padding: $padding-main-gral;
+  padding-bottom: $padding-main-gral;
   h2 {
     margin: 40px;
   }
   h1 {
-    margin: 40px;
+    padding: 40px;
   }
 }
 

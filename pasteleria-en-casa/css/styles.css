@@ -122,7 +122,7 @@
 /*Variables*/
 .contenedor {
   background-color: #FFEEEE;
-  padding: 30px;
+  padding-bottom: 30px;
 }
 
 /*Carrusel*/
@@ -262,7 +262,7 @@
 /*Variables*/
 .contenedorProductos {
   background-color: #FFEEEE;
-  padding: 30px;
+  padding-bottom: 30px;
 }
 .contenedorProductos .tituloProductos {
   display: flex;
@@ -299,14 +299,14 @@
 /*Esilo main seccion "Nosotros"*/
 /*Variables*/
 .mainNosotros {
-  padding: 30px;
+  padding-bottom: 30px;
   background-color: #FFEEEE;
 }
 .mainNosotros .seccionNosotros {
   padding-bottom: 150px;
 }
 .mainNosotros .seccionNosotros .nosotrosInfo {
-  margin: 30px;
+  padding: 30px;
 }
 .mainNosotros .seccionNosotros .nosotrosInfo h1 {
   margin-bottom: 30px;
@@ -321,13 +321,13 @@
 .mainComoComprar {
   background-color: #FFEEEE;
   margin: 0px;
-  padding: 30px;
+  padding-bottom: 30px;
 }
 .mainComoComprar h2 {
   margin: 40px;
 }
 .mainComoComprar h1 {
-  margin: 40px;
+  padding: 40px;
 }
 
 .comoComprar {
@@ -339,7 +339,7 @@
 /*Variables*/
 .mainContacto {
   background-color: #FFEEEE;
-  padding: 30px;
+  padding-bottom: 30px;
 }
 .mainContacto .card {
   background-color: #FFEEEE;
